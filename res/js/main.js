@@ -1,7 +1,6 @@
 let mousePrevX = 0;
 
 window.onload = () => {
-    const info = document.getElementById("info");
     const cookie = document.getElementById("cookie");
     const counter = document.getElementById("counter");
     const cookieClickMultiplier = document.getElementById("cookieClickMultiplier");
