@@ -22,7 +22,7 @@ cookieClickMultiplier.onclick = () => {
         cookieIncrease++;
         counter.innerHTML = numberOfCookies;
         let t = cookieIncrease - 1;
-        info.innerHTML = `You bought a new upgrade with turbo ${t}x`;
+        info.innerHTML = `Upgrade bought ${t}x`;
     }
 }
 
