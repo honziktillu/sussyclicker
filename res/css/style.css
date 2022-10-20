@@ -4,10 +4,14 @@
     user-select: none;
 }
 
+html,
 body {
     background: url("../img/background.gif");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 h1 {
