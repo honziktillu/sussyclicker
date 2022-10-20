@@ -17,6 +17,15 @@ window.onload = () => {
         numberOfCookies += cookieIncrease;
         counter.innerHTML = numberOfCookies;
     }
+
+    cookie.addEventListener("mousedown", () => {
+        cookie.style.backgroundPosition = "0 92%, center";
+    });
+
+    cookie.addEventListener("mouseup", () => {
+        cookie.style.backgroundPosition = "0 0%, center";
+    });
+
     
     cookieClickMultiplier.onclick = () => {
         if (numberOfCookies >= 50) {
