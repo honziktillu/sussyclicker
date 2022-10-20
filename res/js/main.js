@@ -19,7 +19,7 @@ window.onload = () => {
     }
 
     cookie.addEventListener("mousedown", () => {
-        cookie.style.backgroundPosition = "0 92%, center";
+        cookie.style.backgroundPosition = "0 101%, center";
     });
 
     cookie.addEventListener("mouseup", () => {

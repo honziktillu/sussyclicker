@@ -24,7 +24,7 @@ h1 {
 #cookie {
     max-width: 100px;
     width: 100%;
-    height: 75px;
+    height: 105px;
     display: block;
     margin: 0 auto;
     margin-top: 3em;
@@ -33,7 +33,7 @@ h1 {
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     background-position: 0 0%, center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 #cookie:hover {
