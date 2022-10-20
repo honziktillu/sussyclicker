@@ -31,7 +31,7 @@ autoClickerButton.onclick = () => {
         numberOfCookies -= autoClickerPrice;
         counter.innerHTML = numberOfCookies;
         autoClickerPrice *= 2;
-        autoClickerButton.innerHTML = `Buy Auto Clicker: ${autoClickerPrice}`;
+        autoClickerButton.innerHTML = `Buy Auto killer: ${autoClickerPrice}`;
         if (autoClickerIncrease == 0) {
             setInterval(() => {
                 numberOfCookies += autoClickerIncrease;

@@ -25,7 +25,7 @@ h1 {
     width: 100%;
     display: block;
     margin: 0 auto;
-    cursor: pointer;
+    cursor: url("../img/cursorknife.png") 0 128, auto;
     transition: .3s transform ease;
 }
 
