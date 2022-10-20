@@ -12,6 +12,7 @@ body {
     height: 100%;
     overflow: auto;
     overflow-y: hidden;
+    cursor: url("../img/ghostLeft.png") 0 115, auto;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
     width: 100%;
     display: block;
     margin: 0 auto;
-    cursor: url("../img/cursorknife.png") 0 128, auto;
+    cursor: url("../img/cursorknife.png") 0 115, auto;
     transition: .3s transform ease;
 }
 
@@ -48,7 +49,7 @@ button, #info {
     color: rgb(236, 236, 236);
     background: rgba(0, 0, 0, 0.5);
     transition: .2s background-color ease;
-    cursor: pointer;
+    cursor: pointer !important;
     transition: .3s transform ease;
 }
 
