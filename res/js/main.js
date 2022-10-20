@@ -20,14 +20,30 @@ window.onload = () => {
         counter.innerHTML = numberOfCookies;
     }
 
-    cookie.addEventListener("mousedown", () => {
+    const killAni = () => {
         cookie.style.backgroundPosition = "0 101%, center";
         death.style.opacity = 1;
+    }
+
+    const killAniRest = () => {
+        cookie.style.backgroundPosition = "0 0%, center";
+        death.style.opacity = 0;
+    }
+
+    cookie.addEventListener("mousedown", () => {
+        killAni();
+    });
+
+    cookie.addEventListener("touchstart", () => {
+        killAni();
     });
 
     cookie.addEventListener("mouseup", () => {
-        cookie.style.backgroundPosition = "0 0%, center";
-        death.style.opacity = 0;
+        killAniRest();
+    });
+
+    cookie.addEventListener("touchend", () => {
+        killAniRest();
     });
 
     
