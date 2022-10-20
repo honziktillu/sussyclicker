@@ -9,6 +9,8 @@ window.onload = () => {
     
     let numberOfCookies = 0;
     let cookieIncrease = 1;
+
+    let clickerUpgradePrice = 50;
     
     let autoClickerPrice = 100;
     let autoClickerIncrease = 0;
@@ -28,12 +30,12 @@ window.onload = () => {
 
     
     cookieClickMultiplier.onclick = () => {
-        if (numberOfCookies >= 50) {
-            numberOfCookies -= 50; // numberOfCookies = numberOfCookies - 50;
-            cookieIncrease++;
+        if (numberOfCookies >= clickerUpgradePrice) {
+            numberOfCookies -= clickerUpgradePrice; // numberOfCookies = numberOfCookies - 50;
+            clickerUpgradePrice += 50;
+            cookieClickMultiplier.innerText = `Buy upgrade: ${clickerUpgradePrice}`;
+            cookieIncrease += 5;
             counter.innerHTML = numberOfCookies;
-            let t = cookieIncrease - 1;
-            info.innerHTML = `Upgrade bought ${t}x`;
         }
     }
     
@@ -56,10 +58,10 @@ window.onload = () => {
     document.body.addEventListener("mousemove", (e) => {
         if (mousePrevX == 0) return mousePrevX = e.clientX;
         if (e.clientX > mousePrevX) {
-            document.body.style.cursor = `url("./res/img/ghostRight.png") 32 0, auto`;
+            document.body.style.cursor = `url("./res/img/ghostRight.png") 32 32, auto`;
             mousePrevX = e.clientX;
         } else if (e.clientX < mousePrevX) {
-            document.body.style.cursor = `url("./res/img/ghostLeft.png") 32 0, auto`;
+            document.body.style.cursor = `url("./res/img/ghostLeft.png") 32 32, auto`;
             mousePrevX = e.clientX;
         }
     });

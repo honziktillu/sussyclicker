@@ -12,7 +12,7 @@ body {
     height: 100%;
     overflow: auto;
     overflow-y: hidden;
-    cursor: url("../img/ghostLeft.png") 0 115, auto;
+    cursor: url("../img/ghostLeft.png") 32 32, auto;
 }
 
 h1 {
