@@ -38,6 +38,6 @@ autoClickerButton.onclick = () => {
                 counter.innerHTML = numberOfCookies;
             }, 1000);
         }
-        autoClickerIncrease++;
+        autoClickerIncrease += 5;
     }
 }
