@@ -1,6 +1,7 @@
 let mousePrevX = 0;
 
 window.onload = () => {
+    const death = document.getElementById("death");
     const cookie = document.getElementById("cookie");
     const counter = document.getElementById("counter");
     const cookieClickMultiplier = document.getElementById("cookieClickMultiplier");
@@ -21,10 +22,12 @@ window.onload = () => {
 
     cookie.addEventListener("mousedown", () => {
         cookie.style.backgroundPosition = "0 101%, center";
+        death.style.opacity = 1;
     });
 
     cookie.addEventListener("mouseup", () => {
         cookie.style.backgroundPosition = "0 0%, center";
+        death.style.opacity = 0;
     });
 
     
